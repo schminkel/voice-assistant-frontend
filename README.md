@@ -36,3 +36,11 @@ You'll also need an agent to speak with. Try our sample voice assistant agent fo
 ## Contributing
 
 This template is open source and we welcome contributions! Please open a PR or issue through GitHub, and don't forget to join us in the [LiveKit Community Slack](https://livekit.io/join-slack)!
+
+```bash
+## build the docker image
+docker build -t voice-assistant-frontend .
+
+## run the docker image with the env file
+docker run --env-file .env.local -p 3001:3000 voice-assistant-frontend
+```
